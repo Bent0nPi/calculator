@@ -1,0 +1,13 @@
+PUSH 1
+PUSH 2
++
+PRINT
+PUSH -3
++
+#THAT IS COMMENT!!!
+#IN CALCULATOR!!!
+PUSH 27
+#WHAT WILL HAPPEN???
+
+КАК ТЕБЕ ТАКОЕ ИЛОН МАСК?!
+/

@@ -1,0 +1,9 @@
+POP ru.nsu.ccfit.chumak.calculator.commands.CommandPop
+PUSH ru.nsu.ccfit.chumak.calculator.commands.CommandPush
++ ru.nsu.ccfit.chumak.calculator.commands.CommandSum
+- ru.nsu.ccfit.chumak.calculator.commands.CommandDifference
+* ru.nsu.ccfit.chumak.calculator.commands.CommandProduct
+/ ru.nsu.ccfit.chumak.calculator.commands.CommandDivision
+SQRT ru.nsu.ccfit.chumak.calculator.commands.CommandSqrt
+PRINT ru.nsu.ccfit.chumak.calculator.commands.CommandPrint
+DEFINE ru.nsu.ccfit.chumak.calculator.commands.CommandDefine
