@@ -12,7 +12,10 @@ public class CommandPush extends Command{
         // there is no required number of arguments
         for(int i = 0; i < arguments.length; ++i) {
             try {
-                appContext.getArgumentStack().push(Double.parseDouble(arguments[i]));
+                if (appContext.getDefinitions().containsKey(arguments[i])){
+                    arguments[i] = "" + appContext.getDefinitions().get(arguments[i]);
+                }
+                appContext.getArgumentStack().push(Double.parseDouble(arguments[i]) );
             } catch (NumberFormatException e){
                 throw new IncorrectArgumentTypeException("PUSH", i, arguments[i]);
             }

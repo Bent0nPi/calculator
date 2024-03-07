@@ -14,7 +14,7 @@ public class Calculator {
         } else if (args.length == 1){
             parser = new FileParser(args[0]);
         } else {
-            //TODO  напечатать ошибку, что слишком много аргументов
+            System.out.println("Too many arguments were received");
             parser = new FileParser(args[0]);
         }
         Context appContext = new Context();

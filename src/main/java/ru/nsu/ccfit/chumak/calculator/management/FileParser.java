@@ -58,7 +58,7 @@ public class FileParser implements Parser{
         try {
             return reader != null && reader.ready();
         } catch (IOException e) {
-            throw new RuntimeException(e); //TODO сделать нормальное исключение
+            throw new RuntimeException(e);
         }
     }
 }

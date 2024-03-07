@@ -19,7 +19,7 @@ public class CLiParser implements Parser{
         try {
             input = reader.readLine();
         } catch (IOException e) {
-            throw new RuntimeException(e); // TODO нормальное исключение сделай
+            throw new RuntimeException(e);
         }
 
         String[] info;
