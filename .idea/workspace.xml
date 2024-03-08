@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53cf616c-d098-484d-8807-fc71889b98e2" name="Changes" comment="added logging">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CalculatorUnitTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDefine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDefine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDifference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDivision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPrint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSqrt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/factory/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/CLiParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/CLiParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +77,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.CalculatorUnitTests.calculatorTests.executor": "Run",
+    "Gradle.CalculatorUnitTests.commandWithoutArgumentsTests.executor": "Run",
+    "Gradle.CalculatorUnitTests.sum.executor": "Run",
+    "Gradle.CalculatorUnitTests.sumWithArguments.executor": "Run",
+    "Gradle.CalculatorUnitTests.sumWithSmallStack.executor": "Run",
     "Gradle.stack_calculator [:Calculator.main()].executor": "Run",
     "Gradle.stack_calculator [:Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -124,42 +114,141 @@
       <recent name="$PROJECT_DIR$/build/classes/java/main/ru/nsu/ccfit/chumak/calculator/management" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Calculator">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.ccfit.chumak.calculator.Calculator" />
-      <module name="stack_calculator.main" />
-      <option name="PROGRAM_PARAMETERS" value="sample.txt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.nsu.ccfit.chumak.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.CalculatorUnitTests.commandWithoutArgumentsTests">
+    <configuration name="CalculatorUnitTests.calculatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculatorUnitTests.calculatorTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.nsu.ccfit.chumak.calculator.Main" />
-      <module name="stack_calculator.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.nsu.ccfit.chumak.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="CalculatorUnitTests.commandWithoutArgumentsTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculatorUnitTests.commandWithoutArgumentsTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculatorUnitTests.sum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculatorUnitTests.sum&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculatorUnitTests.sumWithArguments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculatorUnitTests.sumWithArguments&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculatorUnitTests.sumWithSmallStack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculatorUnitTests.sumWithSmallStack&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Calculator" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.CalculatorUnitTests.calculatorTests" />
+      <item itemvalue="Gradle.CalculatorUnitTests.commandWithoutArgumentsTests" />
+      <item itemvalue="Gradle.CalculatorUnitTests.sum" />
+      <item itemvalue="Gradle.CalculatorUnitTests.sumWithArguments" />
+      <item itemvalue="Gradle.CalculatorUnitTests.sumWithSmallStack" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.CalculatorUnitTests.commandWithoutArgumentsTests" />
+        <item itemvalue="Gradle.CalculatorUnitTests.calculatorTests" />
+        <item itemvalue="Gradle.CalculatorUnitTests.sumWithSmallStack" />
+        <item itemvalue="Gradle.CalculatorUnitTests.sumWithArguments" />
+        <item itemvalue="Gradle.CalculatorUnitTests.sum" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +279,7 @@
       <workItem from="1709864057067" duration="1000" />
       <workItem from="1709864079924" duration="8000" />
       <workItem from="1709865398786" duration="7567000" />
-      <workItem from="1709881380558" duration="11601000" />
+      <workItem from="1709881380558" duration="17398000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -216,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709780746949</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added logging">
+      <option name="closed" value="true" />
+      <created>1709894793777</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894793777</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
