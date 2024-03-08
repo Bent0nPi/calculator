@@ -1,22 +1,27 @@
 package ru.nsu.ccfit.chumak.calculator.management;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
-public class FileParser implements Parser{
+public class FileParser extends Parser {
+    private final static Logger logger = LogManager.getLogger(FileParser.class);
     private BufferedReader reader;
 
     public FileParser(String fileName){
-       try {
-           FileReader fileReader = new FileReader(fileName);
-           reader = new BufferedReader(fileReader);
-       } catch(FileNotFoundException e){
-           System.err.println("Input file not found: " + e.getMessage());
-       }
+        try {
+            logger.info("Creating FileReader object for file: {}", fileName);
+            FileReader fileReader = new FileReader(fileName);
+            logger.info("Creating BufferedReader");
+            reader = new BufferedReader(fileReader);
+        } catch(FileNotFoundException e){
+            logger.error("File not found: {}", fileName);
+            System.err.println("Input file not found: " + e.getMessage());
+        }
     }
 
     @Override
@@ -24,30 +29,17 @@ public class FileParser implements Parser{
         ParsedRequest result = new ParsedRequest();
         try{
             if(reader.ready()){
+                logger.info("Reading file");
                 String input = reader.readLine();
-                String[] info;
-
-                if(input.replaceAll(" ", "").isEmpty()){
-                    info = new String[1];
-                    info[0] = "";
-                } else {
-                    info = input.split(" ");
-                }
-
-                if( info.length == 1 && info[0].isEmpty() || info[0].charAt(0) == '#') {
-                    return new ParsedRequest();
-                }
-                result.setName(info[0]);
-                String[] parsedArguments = new String[info.length - 1];
-                System.arraycopy(info, 1, parsedArguments, 0, info.length - 1);
-                result.setArguments(parsedArguments);
-                result.setIsCommand(true);
+                if (parseString(input, result)) return new ParsedRequest();
             } else{
+                logger.info("Input file was closed");
                 reader.close();
                 return result;
             }
 
         } catch (IOException e){
+            logger.fatal("IOException while parsing file: {}", e.getMessage());
             System.err.println("I/O exception occurred while program was being executed: " + e.getMessage());
         }
         return result;

@@ -4,12 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53cf616c-d098-484d-8807-fc71889b98e2" name="Changes" comment="added main interface">
+    <list default="true" id="53cf616c-d098-484d-8807-fc71889b98e2" name="Changes" comment="added logging">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDefine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDefine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDivision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandPush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSqrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/factory/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/CLiParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/CLiParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +68,16 @@
   }
 }</component>
   <component name="GitHubPullRequestState">{
-  &quot;prStates&quot;: [
-  ]
+  &quot;prStates&quot;: []
 }</component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Bent0nPi/calculator.git&quot;,
     &quot;accountId&quot;: &quot;4953c657-1cd0-4b20-849a-2dadece5ef2b&quot;
   }
 }</component>
+  <component name="KubernetesApiProvider">{}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -76,26 +89,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.stack_calculator [:Calculator.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.stack_calculator [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/anton/IdeaProjects/stack_calculator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.stack_calculator [:Calculator.main()].executor": "Run",
+    "Gradle.stack_calculator [:Main.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/anton/ideaIU-241.14494.17/apache-log4j-1.2.17/log4j-1.2.17.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -111,6 +128,7 @@
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.nsu.ccfit.chumak.calculator.Calculator" />
       <module name="stack_calculator.main" />
+      <option name="PROGRAM_PARAMETERS" value="sample.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.nsu.ccfit.chumak.calculator.*" />
@@ -148,7 +166,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-e293885f7bc4-JavaScript-IU-241.11761.10" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.17" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.17" />
         <option value="jdk-21.0.2-openjdk-21.0.2-5de6df2af3e8-0651fe42" />
       </set>
     </attachedChunks>
@@ -167,7 +186,11 @@
       <workItem from="1709619836872" duration="1087000" />
       <workItem from="1709739948713" duration="15310000" />
       <workItem from="1709777739191" duration="386000" />
-      <workItem from="1709778515560" duration="1924000" />
+      <workItem from="1709778515560" duration="2968000" />
+      <workItem from="1709864057067" duration="1000" />
+      <workItem from="1709864079924" duration="8000" />
+      <workItem from="1709865398786" duration="7567000" />
+      <workItem from="1709881380558" duration="11601000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -185,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709757229155</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated define">
+      <option name="closed" value="true" />
+      <created>1709780746949</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709780746949</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +225,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="added main interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="added main interface" />
+    <MESSAGE value="updated define" />
+    <MESSAGE value="added logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logging" />
   </component>
 </project>

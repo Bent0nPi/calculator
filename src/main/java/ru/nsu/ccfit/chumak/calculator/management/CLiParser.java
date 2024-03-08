@@ -1,45 +1,35 @@
 package ru.nsu.ccfit.chumak.calculator.management;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
 
-public class CLiParser implements Parser{
+
+public class CLiParser extends Parser {
+    private final static Logger logger = LogManager.getLogger(CLiParser.class);
     private final BufferedReader reader;
 
     public CLiParser () {
+        logger.info("Creating BufferedReader for InputStreamReader for console input");
         reader = new BufferedReader( new InputStreamReader(System.in));
     }
 
     @Override
     public ParsedRequest parse() {
-        String input = null;
+        String input;
+        ParsedRequest result = new ParsedRequest();
         try {
+            logger.info("Reading file");
             input = reader.readLine();
         } catch (IOException e) {
+            logger.fatal("Error reading console input", e);
             throw new RuntimeException(e);
         }
 
-        String[] info;
-        if(input.replaceAll(" ", "").isEmpty()){
-            info = new String[1];
-            info[0] = "";
-        } else {
-            info = input.split(" ");
-        }
-
-        if(info.length == 1 && info[0].isEmpty() || info[0].charAt(0) == '#') {
-            return new ParsedRequest();
-        }
-
-        ParsedRequest result = new ParsedRequest();
-        result.setName(info[0]);
-        String[] parsedArguments = new String[info.length - 1];
-        System.arraycopy(info, 1, parsedArguments, 0, info.length - 1);
-        result.setArguments(parsedArguments);
-        result.setIsCommand(true);
+        if (parseString(input, result)) return new ParsedRequest();
         return result;
     }
 

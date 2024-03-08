@@ -1,12 +1,12 @@
 package ru.nsu.ccfit.chumak.calculator.commands;
 
-import ru.nsu.ccfit.chumak.calculator.exceptions.ArgumentsCountException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.ccfit.chumak.calculator.exceptions.IncorrectArgumentTypeException;
 import ru.nsu.ccfit.chumak.calculator.management.Context;
 
-import java.util.ArrayList;
-
 public class CommandPush extends Command{
+    private static final Logger logger = LogManager.getLogger(CommandPush.class);
     @Override
     public void execute(Context appContext, String[] arguments) {
         // there is no required number of arguments
@@ -17,6 +17,7 @@ public class CommandPush extends Command{
                 }
                 appContext.getArgumentStack().push(Double.parseDouble(arguments[i]) );
             } catch (NumberFormatException e){
+                logger.error("argument {} is not a double", arguments[i]);
                 throw new IncorrectArgumentTypeException("PUSH", i, arguments[i]);
             }
         }

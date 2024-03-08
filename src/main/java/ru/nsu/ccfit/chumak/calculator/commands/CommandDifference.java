@@ -1,18 +1,19 @@
 package ru.nsu.ccfit.chumak.calculator.commands;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.ccfit.chumak.calculator.exceptions.ArgumentsCountException;
 import ru.nsu.ccfit.chumak.calculator.exceptions.SmallStackSizeException;
 import ru.nsu.ccfit.chumak.calculator.management.Context;
-
-import java.util.ArrayList;
 import java.util.EmptyStackException;
 
 public class CommandDifference extends Command{
-
+    private static final Logger logger = LogManager.getLogger(CommandDifference.class);
     @Override
     public void execute(Context appContext, String[] arguments) {
         //check the number of arguments
         if (arguments.length != 0) {
+            logger.error("Wrong number of arguments: {} while 0 required", arguments.length);
             throw new ArgumentsCountException("-", arguments.length, 0);
         }
 
@@ -26,6 +27,7 @@ public class CommandDifference extends Command{
             ++countUsedArguments;
             appContext.getArgumentStack().push(components[0] - components[1]);
         } catch(EmptyStackException e) {
+            logger.error("Stack had got {} elements when 2 were needed", countUsedArguments);
             for(int i = countUsedArguments - 1; i >=0; --i){
                 appContext.getArgumentStack().push(components[i]);
             }
