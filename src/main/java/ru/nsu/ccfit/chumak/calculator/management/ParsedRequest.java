@@ -1,8 +1,7 @@
 package ru.nsu.ccfit.chumak.calculator.management;
 
-import java.util.ArrayList;
-
 public class ParsedRequest {
+    // isCommand field necessary for understanding is it command or comment or space
     private Boolean isCommand;
     private String name;
     private String[] arguments;

@@ -24,7 +24,10 @@ public class CommandDefine extends Command {
         }
 
         try {
-            double value = Double.parseDouble(arguments[arguments.length - 1]);
+            if (appContext.getDefinitions().containsKey(arguments[1])){
+                arguments[1] = "" + appContext.getDefinitions().get(arguments[1]);
+            }
+            double value = Double.parseDouble(arguments[1]);
             appContext.getDefinitions().put(arguments[0], value);
         } catch (NumberFormatException e) {
             logger.error("Incorrect number format, argument is: {}", arguments[1]);

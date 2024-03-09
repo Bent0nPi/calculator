@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53cf616c-d098-484d-8807-fc71889b98e2" name="Changes" comment="added logging">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CalculatorUnitTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDefine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/commands/CommandDefine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/ParsedRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/nsu/ccfit/chumak/calculator/management/ParsedRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CalculatorUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CalculatorUnitTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -78,10 +84,15 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Gradle.CalculatorUnitTests.calculatorTests.executor": "Run",
+    "Gradle.CalculatorUnitTests.commandWithArgumentsTests.executor": "Run",
+    "Gradle.CalculatorUnitTests.commandWithSmallStackSizeTests.executor": "Run",
     "Gradle.CalculatorUnitTests.commandWithoutArgumentsTests.executor": "Run",
+    "Gradle.CalculatorUnitTests.executor": "Run",
     "Gradle.CalculatorUnitTests.sum.executor": "Run",
     "Gradle.CalculatorUnitTests.sumWithArguments.executor": "Run",
     "Gradle.CalculatorUnitTests.sumWithSmallStack.executor": "Run",
+    "Gradle.CalculatorUnitTests.testFactory.executor": "Run",
+    "Gradle.CalculatorUnitTests.testFactoryWithSmallStackSizeTests.executor": "Run",
     "Gradle.stack_calculator [:Calculator.main()].executor": "Run",
     "Gradle.stack_calculator [:Main.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -114,8 +125,8 @@
       <recent name="$PROJECT_DIR$/build/classes/java/main/ru/nsu/ccfit/chumak/calculator/management" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CalculatorUnitTests.commandWithoutArgumentsTests">
-    <configuration name="CalculatorUnitTests.calculatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CalculatorUnitTests.testFactoryWithSmallStackSizeTests">
+    <configuration name="CalculatorUnitTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -128,7 +139,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;CalculatorUnitTests.calculatorTests&quot;" />
+            <option value="&quot;CalculatorUnitTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculatorUnitTests.commandWithArgumentsTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculatorUnitTests.commandWithArgumentsTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculatorUnitTests.commandWithSmallStackSizeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CalculatorUnitTests.commandWithSmallStackSizeTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -163,7 +222,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalculatorUnitTests.sum" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculatorUnitTests.testFactoryWithSmallStackSizeTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -176,55 +235,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;CalculatorUnitTests.sum&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CalculatorUnitTests.sumWithArguments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;CalculatorUnitTests.sumWithArguments&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CalculatorUnitTests.sumWithSmallStack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;CalculatorUnitTests.sumWithSmallStack&quot;" />
+            <option value="&quot;CalculatorUnitTests.testFactoryWithSmallStackSizeTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -236,19 +247,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.CalculatorUnitTests.calculatorTests" />
+      <item itemvalue="Gradle.CalculatorUnitTests" />
+      <item itemvalue="Gradle.CalculatorUnitTests.commandWithArgumentsTests" />
+      <item itemvalue="Gradle.CalculatorUnitTests.commandWithSmallStackSizeTests" />
+      <item itemvalue="Gradle.CalculatorUnitTests.testFactoryWithSmallStackSizeTests" />
       <item itemvalue="Gradle.CalculatorUnitTests.commandWithoutArgumentsTests" />
-      <item itemvalue="Gradle.CalculatorUnitTests.sum" />
-      <item itemvalue="Gradle.CalculatorUnitTests.sumWithArguments" />
-      <item itemvalue="Gradle.CalculatorUnitTests.sumWithSmallStack" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CalculatorUnitTests.testFactoryWithSmallStackSizeTests" />
+        <item itemvalue="Gradle.CalculatorUnitTests.commandWithSmallStackSizeTests" />
+        <item itemvalue="Gradle.CalculatorUnitTests.commandWithArgumentsTests" />
         <item itemvalue="Gradle.CalculatorUnitTests.commandWithoutArgumentsTests" />
-        <item itemvalue="Gradle.CalculatorUnitTests.calculatorTests" />
-        <item itemvalue="Gradle.CalculatorUnitTests.sumWithSmallStack" />
-        <item itemvalue="Gradle.CalculatorUnitTests.sumWithArguments" />
-        <item itemvalue="Gradle.CalculatorUnitTests.sum" />
+        <item itemvalue="Gradle.CalculatorUnitTests" />
       </list>
     </recent_temporary>
   </component>
@@ -280,6 +291,8 @@
       <workItem from="1709864079924" duration="8000" />
       <workItem from="1709865398786" duration="7567000" />
       <workItem from="1709881380558" duration="17398000" />
+      <workItem from="1709921636435" duration="336000" />
+      <workItem from="1709946816829" duration="4611000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
